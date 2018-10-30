@@ -1,0 +1,13 @@
+# Ignore Mac OS X
+.DS_Store
+
+# Ignore the local config file
+configs/local.cfg
+
+# Include folder but not contents
+keys/*
+!keys/.gitkeep
+
+# Uncomment in production branch distribute public keys
+#!keys/*.pub
+
