@@ -27,7 +27,7 @@ An overview of what the perl script does:
 
 ### What does it need?
 
-For convenience [Docker](https://www.docker.com/) is used to build a small perl container. I tried to keep the container small by bulding on the minimalist debian:stretch-slim image. Without Docker, serveral additional perl modules are needed. They can be found on [CPAN](https://www.cpan.org/): Mail::IMAPClient, Email::Address, MIME::QuotedPrint, MIME::Base64, XML::XPath, Time::Piece, Net::IP::Lite, Net::SMTPS, Sys::Hostname.
+For convenience [Docker](https://www.docker.com/) is used to build a small container with perl interpreter. I tried keeping the container small by building on the minimalist debian:stretch-slim image. Without Docker, several additional perl modules are needed. They can be found on [CPAN](https://www.cpan.org/): Mail::IMAPClient, Email::Address, MIME::QuotedPrint, MIME::Base64, XML::XPath, Time::Piece, Net::IP::Lite, Net::SMTPS, Sys::Hostname.
 
 ### Building
 
