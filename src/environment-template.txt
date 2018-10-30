@@ -7,44 +7,44 @@
 #
 # Controlling Mail::IMAP and Net::SMTP flags is left a future exercise
 #
-DEBUG="0"                            # Debug on / off
-DEBUG_TO='some.user@example.com'     # Replace destination address
-DEBUG_SMTP="0"                       # Sent SMTP on / off
-DEBUG_IMAP="0"                       # Save/move IMAP on / off
-DEBUG_STDOUT="0"                     # Dump to STDOUT on / off
+#DEBUG=0                            # Debug on / off
+#DEBUG_TO=some.user@example.com     # Replace destination address
+#DEBUG_SMTP=0                       # Sent SMTP on / off
+#DEBUG_IMAP=0                       # Save/move IMAP on / off
+#DEBUG_STDOUT=0                     # Dump to STDOUT on / off
 
 # Number of ACNS messages to process per execution of script
-ACNSCNT=2
+#ACNSCNT=2
 
 # IP subnets to admin email reference
-OURFILE="ip-template.txt"
+#OURFILE=/mnt/ip-list.txt
 
 # IP space we own (colon seperated CIDR)
-OURCIDR="192.168.0.0/16:10.0.0.0:8"
+#OURCIDR=192.168.0.0/16:10.0.0.0:8
 
 # IMAP configuration options
-IMAPHOST="outlook.office365.com"
-IMAPPORT="993"
-IMAPSSL="1"
-IMAPUSER='some.user@example.com\abuse@example.com'
-IMAPPASS='somePassword'
-IMAPINBOX="INBOX"
-IMAPFOLDERFORWARD="ProcessedForwarded"
-IMAPFOLDERUNKOWN="ProcessedUnknown"
-IMAPFOLDERNOTOURS="ProcessedNotOurs"
-IMAPFOLDERDEBUG="DebugSaved"
+#IMAPHOST=outlook.office365.com
+#IMAPPORT=993
+#IMAPSSL=1
+#IMAPUSER=some.user@example.com\abuse@example.com
+#IMAPPASS=somePassword
+#IMAPINBOX=INBOX
+#IMAPFOLDERFORWARD=ProcessedForwarded
+#IMAPFOLDERUNKOWN=ProcessedUnknown
+#IMAPFOLDERNOTOURS=ProcessedNotOurs
+#IMAPFOLDERDEBUG=DebugSaved
 
 # SMTP configuration options
-SMTPHOST="smtp.office365.com"
-SMTPPORT="587"
-SMTPSSL='starttls'
-SMTPUSER='some.user@example.com'
-SMTPPASS=$IMAPPASS
-SMTPAUTH='1'
+#SMTPHOST=smtp.office365.com
+#SMTPPORT=587
+#SMTPSSL=starttls
+#SMTPUSER=some.user@example.com
+#SMTPPASS=$IMAPPASS
+#SMTPAUTH=1
 
 # Email specifics
-REPLYFROM='abuse@example.com'
-REPLYFORWARD="Infringing IP address has been assigned to an ISP (internet service provider). Notice has been forwarded to the ISP serving the subscriber.\n"
-REPLYUNKNOWN="Infringing IP address cannot be associated with an enduser.\n"
-REPLYNOTOURS="Infringing IP address is outside of the IP address ranges allocated to us by ARIN.\n"
-FORWARDNOTE="This infringement notice has been forwarded to you because you are either the enduser or the service provider for the IP address identified in this notice.  If you are a service provider please forward this notice to the enduser. This infringement notice has been forwarded to you pursuant to the provisions of Sections 41.25 and 41.26 of the Canada Copyright Act.\n\nOffice of Consumer Affairs (OCA) - Notice and Notice Regime\nhttp://www.ic.gc.ca/eic/export site/oca-bc.nsf/eng/ca02920.html\n\nBill C-11\nhttp://www.parl.gc.ca/HousePublications/Publication.aspx?DocId=5697419&export File=4\n"
+#REPLYFROM=abuse@example.com
+#REPLYFORWARD=Infringing IP address has been assigned to an ISP (internet service provider). Notice has been forwarded to the ISP serving the subscriber.\n
+#REPLYUNKNOWN=Infringing IP address cannot be associated with an enduser.\n
+#REPLYNOTOURS=Infringing IP address is outside of the IP address ranges allocated to us by ARIN.\n
+#FORWARDNOTE=This infringement notice has been forwarded to you because you are either the enduser or the service provider for the IP address identified in this notice.  If you are a service provider please forward this notice to the enduser. This infringement notice has been forwarded to you pursuant to the provisions of Sections 41.25 and 41.26 of the Canada Copyright Act.\n\nOffice of Consumer Affairs (OCA) - Notice and Notice Regime\nhttp://www.ic.gc.ca/eic/export site/oca-bc.nsf/eng/ca02920.html\n\nBill C-11\nhttp://www.parl.gc.ca/HousePublications/Publication.aspx?DocId=5697419&export File=4\n

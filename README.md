@@ -35,7 +35,22 @@ Build it using `docker build -t perl-parseacns .`.
 
 ### Configuration
 
-TBD
+Configuration variables as passed to the docker container and `parseacns.pl` script via environment variables. The most convenient way to do this is via an environment file. Create `config.env` based on the `src/environment-template.txt` (which is populated with default values).
+
+The users IMAP and SMTP passwords need to be passed as environment variables also. I recomment the `.passwd.env` file for the task. A `.passwd.env` could look like this:
+
+    IMAPPASS=some_password
+    SMTPPASS=some_other_password
+
+Since both files are passed to the container using the `--env-file` option, any available configuration variable can be specified in either file.
+
+A list of IP address ranges and associated contact email needs to be passed to the script as well. This is in from of a text file passed via bind mount. A template example is provided in `src/ip-template.txt`. Please excuse the strange format. Perhaps I will update the file format to something more common, such as comma delimited some day. Create your local copy of IP blocks and related contacts as `ip-list.txt`.
+
+### Running
+
+Assuming all the configuration files have been created per the instructions in the previous *Configuration* step, the container can be run with the following command line:
+
+    docker run --rm -it --env-file=config.env --env-file=.passwd.env -v "$(pwd)":/mnt perl-parseacns
 
 ### Credits
 

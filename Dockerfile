@@ -2,14 +2,6 @@ FROM debian:stretch-slim
 
 MAINTAINER Adi Linden <adi@adis.ca>
 
-# Build with:
-#
-#    docker build --no-cache -t perl-parseacns .
-#
-# Run with:
-#
-#    docker run --rm -it -e IMAPPASS='some.password' perl-parseacns
-
 # Need these modules:
 #
 #    Mail::IMAPClient
