@@ -1,4 +1,16 @@
-# docker-parseacns-perl
+# About
+
+## Tags
+
+* `latest` [Dockerfile](https://github.com/adilinden/docker-parseacns-perl/blob/master/Dockerfile)
+* `0.9.5` [v0.9.5/Dockerfile](https://github.com/adilinden/docker-parseacns-perl/blob/v0.9.5/Dockerfile)
+
+Note that tags are created using the following autobuild rules on [Docker Hub]:
+
+| Type   | Name                    | Dockerfile Location | Docker Tag Name  |
+|--------|-------------------------|---------------------|------------------|
+| Branch | master                  | /                   | latest           |
+| Tag    | /^v([0-9.]+)$/          | /                   | {\1}             |
 
 ## What is this for?
 

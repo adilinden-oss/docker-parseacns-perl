@@ -67,7 +67,7 @@ use Net::SMTPS;
 use Sys::Hostname;
 
 # Define who we are
-my $version = "0.9.4";
+my $version = "0.9.5";
 my $mailer  = "parseACNS";
 
 #
