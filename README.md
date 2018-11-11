@@ -69,7 +69,7 @@ A list of IP address ranges and associated contact email needs to be passed to t
 
 Assuming all the configuration files have been created per the instructions in the previous *Configuration* step, the container can be run with the following command line:
 
-    docker run --rm -it --env-file=config.env --env-file=.passwd.env -v "$(pwd)":/mnt adilinden/parseacns-perl
+    docker run --rm -it --env-file=config.env --env-file=.passwd.env -v "$(pwd)":/data adilinden/parseacns-perl
 
 ## Credits
 

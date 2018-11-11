@@ -93,7 +93,7 @@ my $debug_stdout = "0";                     # Dump to STDOUT on / off
 my $acnscnt = 2;
 
 # IP subnets to admin email reference
-my $ourfile = "/mnt/ip-list.txt";
+my $ourfile = "/data/ip-list.txt";
 
 # IP space we own
 my @ourcidr = (
